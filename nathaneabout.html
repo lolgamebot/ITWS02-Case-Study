@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathane About Me</title>
+    <link rel="stylesheet" href="nathaneabout.css">
+    <script src="https://kit.fontawesome.com/a83de99317.js" crossorigin="anonymous"></script> <!---------- For Icons ---------->
+    <script src="about.js" defer></script> <!------- Defer Improves Page Load Performance ----------->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/nathane logo.jpg" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='#about'>About Me</a></li>
+                    <li><a href='#portfolio'>Portfolio</a></li>
+                    <li><a href='#hobbies'>Hobbies</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>BSIT 2D</p>
+                <h1>Hi I'm <span>Nathane</span> <br> from NEUST</h1>
+            </div>
+            <a href="#" class="to-top">
+                <i class="fa-solid fa-up-long"></i>
+            </a>
+        </div>
+    </div> 
+
+<!----------- About --------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/nathaneuser.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A NEUST BSIT sophomore student.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('language')">Programming Language</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Can Work Under Pressure</span>
+                                <br>As a student I am capable to excel and maintain composure in fast-paced, demanding situations, consistently meeting deadlines and achieving goals.</li>
+                            <li><span>Fast Learner</span>
+                                <br>Quick learner capable of rapidly mastering new concepts and technologies to adapt seamlessly to evolving tasks and responsibilities.                            </li>
+                            <li><span>Team Oriented</span>
+                                <br>Capable of Collaborating with colleagues to ensure smooth operations, and supporting each other.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="language">
+                        <ul>
+                            <li><span>HTML</span>
+                                <br>HTML (HyperText Markup Language) is the standard markup language used to create and structure web content, defining the layout and organization of web pages through elements like headings, paragraphs, and links.</li>
+                            <li><span>C++</span>
+                                <br>C++ is a high-level programming language that combines object-oriented and procedural programming features, enabling developers to create efficient and high-performance applications across various domains, including system software, game development, and embedded systems.</li>
+                            <li><span>Java</span>
+                                <br>Java is a versatile, object-oriented programming language designed for building platform-independent applications, particularly in web and mobile environments, known for its portability, security features, and extensive libraries.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2011 - 2017</span><br>Primary School
+                                <br>Raja Centro Elementary School
+                            </li>
+                            <li><span>2017 - 2023</span><br>Secondary School
+                                <br>St. Rose of Lima Catholic School</li>
+                            <li><span>2023 - Present</span><br>Tertiary School
+                                <br>Neuva Ecija University of Science and Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------- Portfolio ------------->
+
+<div id="portfolio">
+    <h1 class="sub-title">My Portfolio</h1>
+    
+    <div class="portfolio-list">
+        <!-- Lab 5 -->
+        <div class="portfolio-item">
+            <h2>Circle Area Calculator</h2>
+            <label for="radius">Radius:</label>
+            <input type="number" id="radius" placeholder="Enter radius" min="0" />
+            <button onclick="calculateArea()">Calculate Area</button>
+            <button onclick="reset()">Reset</button>
+            <div class="result" id="result">Area will be shown here</div>
+            <div class="download-section">
+                <a href="nathanelab5.html" download class="btn btn-submit">Download Lab 5</a>
+            </div>
+        </div>
+
+        <!-- Lab 4 -->
+        <div class="portfolio-item">
+            <h2>Video</h2>
+            <video width="100%" controls>
+              <source src="mp4/nathanelab4.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="download-section">
+                <a href="nathanelab4.html" download class="btn btn-submit">Download Lab 4</a>
+            </div>
+        </div>
+
+        <!-- Lab 3 -->
+        <div class="portfolio-item">
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="mp3/Lady Gaga - Poker Face (Official Music Video).mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+            <div class="download-section">
+                <a href="nathanelab3.html" download class="btn btn-submit">Download Lab 3</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------- Hobbies ----------->
+
+<div id="hobbies">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="hobby-list">
+            <div class="hobby">
+                <img src="images/gym.png" alt="Gym">
+                    <div class="layer">
+                        <h3>Gym</h3>
+                        <p>Seeing my body transform into a stronger, leaner version is incredibly motivating.</p>
+                    </div>
+            </div>
+            <div class="hobby">
+                <img src="images/music.png" alt="Listening to music">
+                    <div class="layer">
+                        <h3>Listening to music</h3>
+                        <p>Music calms my mind.</p>
+                    </div>
+            </div>
+            <div class="hobby">
+                <img src="images/games.png" alt="Playing video games">
+                    <div class="layer">
+                        <h3>Playing video games</h3>
+                        <p>Playing video games helps me unwind and relax.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------- Contact ----------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> nathanemartinyt@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0931 923 7647</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/nathane.martin.75?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/trenbolone_acetat3/profilecard/?igsh=MWwzNGtrNGhvbzdmZg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://t.me/Nathaneq"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © NEUST BSIT 2D Student <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+</body>
+</html>
