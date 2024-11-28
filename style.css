@@ -113,3 +113,45 @@ body{
 .card1, .card2 {
   background-color: #ff004d;
 }
+
+/* ---- Mobile ------- */
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .card img {
+    height: 30vh;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .layer h2 {
+    font-size: 18px;
+  }
+
+  .layer p {
+    font-size: 12px;
+  }
+}
